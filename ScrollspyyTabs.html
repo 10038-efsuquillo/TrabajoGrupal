@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/icomoon.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/faker/dist/faker.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div class="container">
+          <h3>Tabs</h3>
+
+          <ul class="nav nav-tabs">
+            <li><a href="#Par1" data-toggle="tab" class="nav-link">XML</a></li>
+            <li><a href="#Par2" data-toggle="tab" class="nav-link">JSON</a></li>
+            <li><a href="#Par3" data-toggle="tab" class="nav-link">AJAX</a></li>
+          </ul>
+
+          <div class="tab-content">
+
+            <div class="tab-pane active" id="Par1">
+              <br>
+              <div class="row">
+                <div class="col-md-9 contenido-scrollspy" data-spy="scroll" data-target="#menu" data-offset="0">
+                  <img src="img/xml.jpg" class="img-responsive">
+                  <br>
+                  <div class="panel panel-primary" id="dj1">
+                    <div class="panel-heading">QUE ES XML</div>
+                    <div class="panel-body">
+                      XML (Extensible Markup Language) es un lenguaje de marcas diseñado para almacenar y transportar datos de manera estructurada. Se utiliza ampliamente en el intercambio de información entre diferentes sistemas y aplicaciones, especialmente en entornos web.<br>
+
+                      El XML se basa en etiquetas o marcas que describen los datos contenidos en un documento. Estas etiquetas se utilizan para definir elementos y estructuras de datos, similar a cómo las etiquetas HTML se utilizan para estructurar y presentar contenido en la web. Sin embargo, a diferencia de HTML, XML no tiene etiquetas predefinidas y permite a los usuarios definir sus propias etiquetas personalizadas.
+                    </div>
+                  </div> 
+                  <div class="panel panel-primary" id="dj2">
+                    <div class="panel-heading">EJEMPLO:</div>
+                    <div class="panel-body">
+                      <div> <h3> <span> Ejemplo 1 - Mostrar un archivo simple de xml</span></h3>
+                        <note>
+                        <to>Para: Douglas</to> <br>
+                        <from>De: Fernando</from> <br>
+                        <heading>Recuerdame</heading> <br>
+                        <body>Quiero que sepas que esto es un ejemplo de mostrar un mensaje en xml</body>
+                        </note>
+                      </div>
+                      <h3> <span> Ejemplo 2 -  Fragmento de código en formato XML</span></h3>
+                      <table id="demo">
+                        <tr>
+                         <th>TITULO</th>
+                         <th>ARTISTA</th>
+                         <th>ORIGEN</th>
+                         <th>PRECIO</th>
+                         <th>ANIO</th>
+                        </tr>
+                      </table>
+  
+                     <button id="CargarDatos" onclick="CargarDatos()">Cargar Datos</button>
+                    </div>
+                  </div> 
+
+                </div>
+                <div class="col-md-3" id="menu">
+                  <ul class="nav nav-pills nav-stacked">
+                    <h4>Contenido XML</h4>
+                    <li><a href="#dj1">QUE ES XML</a></li>
+                    <li><a href="#dj2">EJEMPLO DE XML</a></li>
+                  </ul>                  
+                </div>
+                  
+              </div>
+              <div id="#xmlSlider"></div> 
+            </div>
+
+            <div class="tab-pane" id="Par2">
+              <br>
+              <div class="row">
+                <div class="col-md-9 contenido-scrollspy" data-spy="scroll" data-target="#menu" data-offset="0">
+                  <img src="img/json.jpg" class="img-responsive">
+                  <br>
+                  <div class="panel panel-primary" id="b1">
+                    <div class="panel-heading">QUE ES JSON</div>
+                    <div class="panel-body">
+                      JSON (JavaScript Object Notation) es un formato de intercambio de datos ligero y fácil 
+                      de leer y escribir. Se basa en la notación de objetos de JavaScript, aunque se ha 
+                      convertido en un estándar independiente y se utiliza ampliamente en una variedad de
+                      aplicaciones y entornos. <br>
+                      JSON se utiliza para representar datos estructurados en forma de pares clave-valor. 
+                      Los datos se organizan en objetos, que son colecciones no ordenadas de pares
+                      clave-valor, y en matrices, que son listas ordenadas de valores. Los valores pueden ser
+                      cadenas de texto, números, booleanos, objetos JSON anidados, matrices o el valor nulo.
+                    </div>
+                  </div> 
+                  <div class="panel panel-primary" id="b2">
+                    <div class="panel-heading">EJEMPLO DE JSON</div>
+                    <div class="panel-body">
+                      <pre>
+window.addEventListener("DOMContentLoaded", function() {
+  document.getElementById("miBoton").addEventListener("click", function() {
+    var persona = {
+      "nombre": "Juan Pérez",
+      "edad": 30,
+      "ciudad": "Madrid",
+      "profesion": "Ingeniero",
+      "hobbies": ["fútbol", "lectura", "viajes"],
+      "redes_sociales": {
+        "twitter": "@juanperez",
+        "linkedin": "linkedin.com/in/juanperez",
+        "instagram": "@juanperez"
+      }
+    };
+  
+    var resultadoDiv = document.getElementById("resultado");
+    resultadoDiv.innerHTML = JSON.stringify(persona, null, 2);
+  });
+});
+                      </pre>
+                    </div>
+                  </div>         
+                  
+                  
+                  <div class="panel panel-primary" id="b3">
+                    <div class="panel-heading">Ejemplo de JSON en HTML</div>
+                    <div class="panel-body">
+                      <button id="miBoton">Mostrar JSON</button>
+                      <div id="resultado"></div> 
+                    </div>
+                  </div> 
+                  
+                </div>
+
+                <script>
+                  window.addEventListener("DOMContentLoaded", function() {
+                    document.getElementById("miBoton").addEventListener("click", function() {
+                      var persona = {
+                        "nombre": "Juan Pérez",
+                        "edad": 30,
+                        "ciudad": "Madrid",
+                        "profesion": "Ingeniero",
+                        "hobbies": ["fútbol", "lectura", "viajes"],
+                        "redes_sociales": {
+                          "twitter": "@juanperez",
+                          "linkedin": "linkedin.com/in/juanperez",
+                          "instagram": "@juanperez"
+                        }
+                      };
+                    
+                      var resultadoDiv = document.getElementById("resultado");
+                      resultadoDiv.innerHTML = JSON.stringify(persona, null, 2);
+                    });
+                  });
+                </script>
+              
+                <div class="col-md-3" id="menu">
+                  <ul class="nav nav-pills nav-stacked">
+                    <h4>Contenido JSON</h4>
+                    <li><a href="#b1">QUE ES JSON</a></li>
+                    <li><a href="#b2">EJEMPLO DE JSON</a></li>
+                  </ul>                  
+                </div>
+              </div>
+              <div id="#jsonSlider"></div> 
+            </div>
+            
+            <div class="tab-pane" id="Par3">
+              <br>
+              <div class="row">
+                <div class="col-md-9 contenido-scrollspy" data-spy="scroll" data-target="#menu" data-offset="0">
+                  <img src="img/AJAX.jpg" class="img-responsive">
+                  <br>
+                  <div class="panel panel-primary" id="d1">
+                    <div class="panel-heading">QUE ES AJAX</div>
+                    <div class="panel-body">
+                      AJAX (Asynchronous JavaScript and XML) es una técnica de programación que permite 
+                      actualizar partes de una página web sin necesidad de recargarla por completo. La 
+                      característica principal de AJAX es su capacidad para realizar solicitudes asíncronas al 
+                      servidor, lo que significa que puede enviar y recibir datos en segundo plano sin 
+                      interrumpir la interacción del usuario con la página.<br>
+                      A diferencia del modelo tradicional de la web, donde cada interacción del usuario implica 
+                      una carga completa de la página, AJAX permite actualizar y mostrar información adicional 
+                      en la página sin necesidad de recargarla. Esto mejora la experiencia del usuario al 
+                      proporcionar una respuesta más rápida y fluida, similar a una aplicación de escritorio.
+                    </div>
+                  </div> 
+                  <div class="panel panel-primary" id="d2">
+                    <div class="panel-heading">EJEMPLO DE AJAX</div>
+                    <div class="panel-body">
+                  
+                      <div class="panel panel-primary" id="d3">
+                        <div class="panel-heading">Ejemplo de AJAX en HTML</div>
+                        <div class="panel-body">
+                          
+                          <button id="load-button">Cargar contenido</button>
+
+                          <table id="my-table">
+                            <thead>
+                              <tr>
+                                <th>ID</th>
+                                <th>Nombre</th>
+                                <th>Correo electrónico</th>
+                              </tr>
+                            </thead>
+                            <tbody id="table-body">
+                              <!-- Aquí se insertarán los datos generados dinámicamente -->
+                            </tbody>
+                          </table>
+                        </div>
+                      </div> 
+
+                      <pre>
+$(document).ready(function() {
+  $("#load-button").click(function() {
+    var rows = "";
+
+    for (var i = 1; i <= 3; i++) {
+      var name = faker.name.findName();
+      var email = faker.internet.email();
+
+      rows += "<tr>" +
+              "<td>" + i + "</td>" +
+              "<td>" + name + "</td>" +
+              "<td>" + email + "</td>" +
+              "</tr>";
+    }
+
+    $("#table-body").html(rows);
+  });
+});
+                      </pre>    
+
+
+                      
+                      <div id="ajaxResult"></div>
+                    </div>
+                  </div>             
+                </div>
+                <div class="col-md-3" id="menu">
+                  <ul class="nav nav-pills nav-stacked">
+                    <h4>Contenido AJAX</h4>
+                    <li><a href="#d1">QUE ES AJAX</a></li>
+                    <li><a href="#d2">EJEMPLO DE AJAX</a></li>
+                  </ul>                  
+                </div>
+              </div>
+              <div id="#ajaxSlider"></div> 
+            </div>
+
+
+            <div class="tab-pane" id="Par3">
+              <img src="img/python.jpg" class="img-responsive">
+            </div>
+          </div>
+        </div>
+<script>
+  // Ejemplo XML
+  var xmlExample = '<pre>&lt;person&gt;\n  &lt;name&gt;John Doe&lt;/name&gt;\n  &lt;age&gt;30&lt;/age&gt;\n  &lt;email&gt;johndoe@example.com&lt;/email&gt;\n&lt;/person&gt;</pre>';
+  document.getElementById('xmlExampleContainer').innerHTML = xmlExample;
+
+  // Ejemplo JSON
+  var jsonExample = '<pre>{\n  "person": {\n    "name": "John Doe",\n    "age": 30,\n    "email": "johndoe@example.com"\n  }\n}</pre>';
+  document.getElementById('jsonExampleContainer').innerHTML = jsonExample;
+
+  // Ejemplo AJAX
+  var ajaxExample = `
+    <button id="ajaxButton">Cargar datos</button>
+    <div id="ajaxResult"></div>
+  `;
+
+  document.getElementById('ajaxExampleContainer').innerHTML = ajaxExample;
+
+  document.getElementById('ajaxButton').addEventListener('click', function() {
+    var xhr = new XMLHttpRequest();
+    xhr.onreadystatechange = function() {
+      if (xhr.readyState === 4 && xhr.status === 200) {
+        document.getElementById('ajaxResult').innerText = xhr.responseText;
+      }
+    };
+    xhr.open('GET', 'example.json', true);
+    xhr.send();
+  });
+</script>
+<script>
+  $(function() {
+    // Inicializar el slider vertical para la sección XML
+    $("#xmlSlider").slider({
+      orientation: "vertical",
+      range: "min",
+      min: 0,
+      max: 100,
+      value: 100,
+      slide: function(event, ui) {
+        // Actualizar el scroll de la sección XML
+        $(".contenido-scrollspy").scrollTop((100 - ui.value) * ($(".contenido-scrollspy")[0].scrollHeight - $(".contenido-scrollspy").outerHeight()) / 100);
+      }
+    });
+
+    // Inicializar el slider vertical para la sección JSON
+    $("#jsonSlider").slider({
+      orientation: "vertical",
+      range: "min",
+      min: 0,
+      max: 100,
+      value: 100,
+      slide: function(event, ui) {
+        // Actualizar el scroll de la sección JSON
+        $(".contenido-scrollspy").scrollTop((100 - ui.value) * ($(".contenido-scrollspy")[0].scrollHeight - $(".contenido-scrollspy").outerHeight()) / 100);
+      }
+    });
+
+    // Inicializar el slider vertical para la sección AJAX
+    $("#ajaxSlider").slider({
+      orientation: "vertical",
+      range: "min",
+      min: 0,
+      max: 100,
+      value: 100,
+      slide: function(event, ui) {
+        // Actualizar el scroll de la sección AJAX
+        $(".contenido-scrollspy").scrollTop((100 - ui.value) * ($(".contenido-scrollspy")[0].scrollHeight - $(".contenido-scrollspy").outerHeight()) / 100);
+      }
+    });
+  });
+</script>
+<script>
+  function CargarDatos() {
+    var datos = [
+      {
+        TITULO: "Nombre del álbum 1",
+        ARTISTA: "Nombre del artista 1",
+        ORIGEN: "Origen del CD 1",
+        PRECIO: "10.99",
+        ANIO: "2021"
+      },
+      {
+        TITULO: "Nombre del álbum 2",
+        ARTISTA: "Nombre del artista 2",
+        ORIGEN: "Origen del CD 2",
+        PRECIO: "12.99",
+        ANIO: "2022"
+      }
+      // Agrega más objetos con los datos de los CDs si es necesario
+    ];
+
+    var tabla = "";
+    for (var i = 0; i < datos.length; i++) {
+      tabla += "<tr>";
+      tabla += "<td>" + datos[i].TITULO + "</td>";
+      tabla += "<td>" + datos[i].ARTISTA + "</td>";
+      tabla += "<td>" + datos[i].ORIGEN + "</td>";
+      tabla += "<td>" + datos[i].PRECIO + "</td>";
+      tabla += "<td>" + datos[i].ANIO + "</td>";
+      tabla += "</tr>";
+    }
+    
+    document.getElementById("demo").innerHTML = tabla;
+  }
+</script>
+<script>
+  $(document).ready(function() {
+    $("#load-button").click(function() {
+      var rows = "";
+
+      for (var i = 1; i <= 3; i++) {
+        var name = faker.name.findName();
+        var email = faker.internet.email();
+
+        rows += "<tr>" +
+                "<td>" + i + "</td>" +
+                "<td>" + name + "</td>" +
+                "<td>" + email + "</td>" +
+                "</tr>";
+      }
+
+      $("#table-body").html(rows);
+    });
+  });
+</script>
+
+
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
+
+        <script src="js/vendor/bootstrap.min.js"></script>
+
+        <script src="js/main.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    </body>
+</html>

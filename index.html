@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Tabla de Semejanzas y Diferencias: XML vs JSON</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script type="text/javascript" src="./js/main.js"></script>
+    <style>
+        body {
+            background-color: lightgray;
+        }
+        .navbar-default {
+            background-color: #333;
+        }
+        .navbar-default .navbar-nav > li > a {
+            color: #000;
+        }
+        .affix {
+            top: 50px;
+            width: 100%;
+            z-index: 9999;
+        }
+        .affix + .container {
+            padding-top: 70px;
+        }
+        .tabl{
+        	padding-top: 10%;
+        }
+    </style>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+</head>
+<body>
+    <!--[if lt IE 7]>
+        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <nav class="navbar navbar-default" data-spy="affix" data-offset-top="50">
+        <div class="container">
+            <div class="navbar-header">
+                <button class="navbar-toggle" data-toggle="collapse" data-target="#menu">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                
+            </div>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="nav navbar-nav">
+                    <li class="dropdown mega-dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cursos Profesionales <span class="caret"></span></a>
+                        <ul class="dropdown-menu mega-dropdown-menu row">
+                            <li class="col-sm-4">
+                                <div class="carousel slide" id="mislider" data-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="item active">
+                                            <img src="img/xml.jpg">
+                                        </div>
+                                        <div class="item">
+                                            <img src="img/json.jpg">
+                                        </div>
+                                        <div class="item">
+                                            <img src="img/AJAX.jpg">
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="btn btn-block btn-devcode" disabled>Aprende con nosotros</button>
+                            </li>
+                            <li class="col-sm-4">
+                                <div class="list-group">
+                                    <a href="#" class="list-group-item active">Cursos Básicos</a>
+                                    <a href="ScrollspyyTabs.html#Par1" class="list-group-item nav-link"  target="_blank">XML</a>
+                                    <a href="ScrollspyyTabs.html#Par2" class="list-group-item nav-link" target="_blank">JSON</a>
+                                    <a href="ScrollspyyTabs.html#Par3" class="list-group-item nav-link" target="_blank">AJAX</a>
+                                </div>
+                            </li>
+                            <li class="col-sm-4">
+                                <img src="img/Imagen1.jpg" class="img-responsive">
+                                <h3>Introducción a XML, JSON, AJAX</h3>
+                                <p class="app-justificar">JSON, XML y AJAX son elementos clave en el desarrollo web. JSON es un formato liviano para intercambiar datos, XML es un lenguaje de marcas para estructurar información, y AJAX permite actualizar partes de una página sin recargarla. Estas tecnologías mejoran la interacción y la eficiencia en las aplicaciones web.</p>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container tabl">
+        <h1>Tabla de Semejanzas y Diferencias: XML vs JSON</h1>
+        <table class="table">
+            <thead class="thead-light">
+                <tr>
+                    <th></th>
+                    <th>XML</th>
+                    <th>JSON</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Legibilidad</td>
+                    <td>Verboso y estructurado</td>
+                    <td>Conciso y fácil de leer</td>
+                </tr>
+                <tr>
+                    <td>Sintaxis</td>
+                    <td>Basado en etiquetas</td>
+                    <td>Basado en pares de clave-valor</td>
+                </tr>
+                <tr>
+                    <td>Soporte de tipos de datos</td>
+                    <td>Soporte nativo para tipos de datos complejos</td>
+                    <td>Soporte limitado para tipos de datos complejos</td>
+                </tr>
+                <tr>
+                    <td>Tamaño del archivo</td>
+                    <td>Mayor tamaño debido a las etiquetas</td>
+                    <td>Menor tamaño debido a su simplicidad</td>
+                </tr>
+                <tr>
+                    <td>Parseo</td>
+                    <td>Requiere un parser para analizar los datos</td>
+                    <td>Puede ser analizado directamente en JavaScript</td>
+                </tr>
+                <tr>
+                    <td>Aplicaciones</td>
+                    <td>Ampliamente utilizado en aplicaciones de intercambio de datos</td>
+                    <td>Comúnmente utilizado en aplicaciones web y servicios de API</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
